@@ -13,5 +13,14 @@
   "devDependencies": {
     "webpack": "^4.28.3",
     "webpack-cli": "^3.2.0"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhilome/react-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akhilome/react-starter/issues"
+  },
+  "homepage": "https://github.com/akhilome/react-starter#readme"
 }
