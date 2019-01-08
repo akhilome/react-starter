@@ -1,5 +1,6 @@
 import './index.css';
 import React, { Component } from 'react';
+import { hot } from 'react-hot-loader';
 
 class App extends Component {
   state = { count: 0 };
@@ -15,7 +16,9 @@ class App extends Component {
     return (
       <div>
         <h2>Counter</h2>
-        <p>Number: {this.state.count}</p>
+        <p className={this.state.count > 7 ? 'warning' : null}>
+          Count: {this.state.count}
+        </p>
         <button onClick={this.increment}>+1</button>
         <button onClick={this.decrement}>-1</button>
       </div>
@@ -23,4 +26,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default hot(module)(App);
